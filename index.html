@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <label class="switch">
+        <input type="checkbox" class="toggle">
+        <span class="slider round"></span>
+    </label>
+
+    <h1>Teste de Toggle Switch</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci earum quod dolore saepe veritatis, velit quidem neque atque autem assumenda. Quas ad quibusdam voluptates! Repellat architecto dolorem culpa consequatur exercitationem? çLorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita autem fugit qui laudantium totam neque mollitia minima, eius ducimus eveniet. Est at maxime excepturi porro qui delectus commodi vero.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus non quae eligendi soluta optio dignissimos. Tempore quae nobis alias quo dicta excepturi obcaecati nam voluptates! Sunt nulla quo quae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quae voluptate a blanditiis, labore totam laudantium, soluta quo libero expedita nihil! Illo mollitia est quod a aperiam totam placeat nobis!
+    </p>
+
+    <script>
+        const btnToggle = document.querySelector(".toggle");
+        const body = document.querySelector("body");
+        const spanBtn = document.querySelector(".slider");
+
+        console.log(btnToggle);
+        console.log(body);
+        console.log(spanBtn);
+
+        btnToggle.addEventListener("click", function darkModeActivator() {
+            body.classList.toggle("dark-active");
+            spanBtn.classList.toggle("claro");
+        })
+    </script>
+    
+</body>
+</html>
